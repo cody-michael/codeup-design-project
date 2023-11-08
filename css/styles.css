@@ -10,3 +10,17 @@ img{max-width: 100%}
     justify-content:space-between;
 
 }
+
+nav{
+    display: flex;
+}
+
+h1{
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+}
+#redButton{
+    border-radius: %;
+}
