@@ -21,6 +21,28 @@ h1{
 h2{
     font-weight: bold;
 }
-#redButton{
-    border-radius: %;
+
+.circles{
+    width: max-content;
+    margin: 0 auto;
+
+
+    & div{
+        margin: 2em;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+        border-radius: 50%;
+        border: solid .3em red;
+        & p{
+            margin: auto;
+        }
+
+
+    }
+
 }
