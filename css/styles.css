@@ -1,56 +1,101 @@
-*{box-sizing: border-box;
-    margin:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
-body{
+
+:root {
+    --anton: 'Anton', sans-serif;
+    --abel: 'Abel', sans-serif;
+    --color1: #E6563B;
+    --color2: #EB9D3A;
+    --color3: #7CB06C;
+    --color4: #00ABA9;
+    --color5: #F0F0F0;
+    --color6: #E6E6E6;
+}
+
+
+body {
     background-color: lightgrey;
+    font-family: var(--abel);
 }
 
-img{max-width: 100%}
+img {
+    max-width: 100%
+}
 
-.card-c{
+.card-c {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
 
-nav{
+nav {
     display: flex;
 }
 
-h1{
+h1, h2 {
     font-weight: bold;
-}
-h2{
-    font-weight: bold;
+    font-family: var(--anton);
 }
 
-/*.circles{
-    width: max-content;
-    margin: 0 auto;
+.btn {
+    border: solid .5em white;
+    padding: 2em;
+    border-radius: 50%;
+}
 
 
-    & div{
-        margin: 2em;
-        height: 100px;
-        width: 100px;
+.custom-01 {
+    margin: auto;
+    --_1t1: 100px;
+    .btn-con {
         display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
+        flex-flow: row wrap;
         justify-content: center;
-        background-color: blue;
-        border-radius: 50%;
-        border: solid .3em red;
-        & p{
-            margin: auto;
+        margin: auto;
+        max-width: 900px;
+        padding: 0 1em;
+
+        .link {
+            margin: 2em;
+            display: flex;
+            justify-content: center;
+
+            > a {
+                font-size: .9rem;
+
+                text-decoration: none;
+                text-align: center;
+                padding: 2em 2em;
+                border-radius: 50%;
+                width: var(--_1t1);
+                height: var(--_1t1);
+                border: solid 6px #F0F0F0;
+                color: #F0F0F0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+            }
         }
 
+        > div:nth-child(1) a {
+            background-color: var(--color1);
+        }
 
-    }*/
-    .btn{
-        border:solid .5em white;
-        padding: 2em;
-        border-radius: 50%;
+        > div:nth-child(2) a {
+            background-color: var(--color2);
+        }
+
+        > div:nth-child(3) a {
+            background-color: var(--color3);
+        }
+
+        > div:nth-child(4) a {
+            background-color: var(--color4);
+        }
     }
-
-
+}
