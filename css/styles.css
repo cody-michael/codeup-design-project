@@ -15,6 +15,7 @@
     --color6: #E6E6E6;
 }
 
+
 body {
     background-color: var(--color6);
     font-family: var(--abel);
