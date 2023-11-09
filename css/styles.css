@@ -47,11 +47,12 @@ h1, h2 {
     border-radius: 50%;
 }
 
-
+   /* Top Section*/
 .custom-01 {
     margin: auto;
     --_1t1: 100px;
 
+    /* Circles Container*/
     .btn-con {
         display: flex;
         flex-flow: row wrap;
@@ -60,6 +61,7 @@ h1, h2 {
         max-width: 900px;
         padding: 0 1em;
 
+        /*Circle & position*/
         .link {
             margin: 2em;
             display: flex;
@@ -81,6 +83,7 @@ h1, h2 {
             }
         }
 
+        /*Circle-colors*/
         > div:nth-child(1) a {
             background-color: var(--color1);
         }
@@ -99,16 +102,17 @@ h1, h2 {
     }
 }
 
+    /*cards styling*/
 .custom-02 {
     margin: auto;
-    max-width: max-content;
+    max-width: 400px;
     border: solid 8px #E6E6E6;
 
     .card-body {
         background-color: rgba(0, 0, 0, 0.18);
-
     }
 
+    /*Footer Styling*/
     .custom-ft {
         padding: 0;
         margin: 0;
@@ -117,6 +121,7 @@ h1, h2 {
         background-color: #E6E6E6;
         border-radius: 0;
 
+        /*Card Footer Left Side*/
         > :nth-child(1) {
             & p {
                 text-wrap: none;
@@ -125,12 +130,15 @@ h1, h2 {
             }
         }
 
+        /*Card Footer Right Side*/
         > :nth-child(2) {
             display: flex;
             align-items: center;
             justify-content: space-between;
 
+            /*icon divs*/
             & div {
+                font-family: var(--anton);
                 font-size: 10px;
                 text-align: center;
                 height: 18px;
@@ -142,6 +150,7 @@ h1, h2 {
                 justify-content: center;
             }
 
+            /*icon colors*/
             > :nth-child(1) {
                 background-color: var(--color1);
             }
@@ -161,11 +170,15 @@ h1, h2 {
     }
 
 }
+
+
+
 h4{
     text-align: center;
     padding-bottom: 1em;
     font-size: medium;
 }
+
 #selected{
     padding-bottom: 4em;
 }
@@ -183,21 +196,58 @@ h4{
     height:100%
 
 }
+
 .sidePage{
     margin-bottom: 1em;
-    padding-bottom: 2em;
-
 }
+
 .lastTitle{
     padding-bottom: 1em;
 }
+
 
 hr{
     padding-bottom: 2em;
 }
 h3{
-
     font-family: var(--anton);
     text-align: left;
+}
 
+/*Bottom Right Section*/
+.custom-03{
+    /*Image Size*/  --_img-size: 70px;
+
+
+
+    /*Title section*/
+    >:nth-child(1){
+        margin-bottom: 1em;
+    }
+
+    /*main sections*/
+    > div{
+        padding: .5em;
+        display: flex;
+
+
+        /*images container section*/
+        & div{
+            height: var(--_img-size);
+            width: var(--_img-size);
+            margin:0;
+            padding: 0;
+            display:inline-block;
+            flex-flow: row nowrap;
+            background-color: #7CB06C;
+        }
+
+    }
+
+    /*All Images in Section*/
+    & img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 }
