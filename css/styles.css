@@ -140,7 +140,7 @@ h3{
         border-radius: 0;
 
         /*Card Footer Left Side*/
-        > :nth-child(1) {
+         :nth-child(1) {
             & p {
                 text-wrap: none;
                 margin: 0;
@@ -215,7 +215,6 @@ h3{
             width: var(--_img-size);
             padding: 0;
             display:inline-block;
-            flex-flow: row nowrap;
         }
 
     }
