@@ -213,11 +213,9 @@ h3{
         & div{
             height: var(--_img-size);
             width: var(--_img-size);
-            margin:0;
             padding: 0;
             display:inline-block;
             flex-flow: row nowrap;
-            background-color: #7CB06C;
         }
 
     }
